@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 20px;
+    color: #E2DFD0;
+    font-family: Verdana, sans-serif;
+}
+
+#navbar{
+    width: 100vw;
+    height: 4rem ;
+    padding: 0 2rem;
+
+    background: #32012F;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#navbar>ul{
+    font-size: 1.2em;
+    list-style: none;
+
+    display: flex;
+    gap: 2rem;
+    justify-content: space-evenly;
+}
+
+#navbar a{
+    text-decoration: none;
+    color: #E2DFD0;
+}
+
+#navbar a:hover{
+    text-decoration: underline;
+}
+
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+    
+    background-color: #524C42 ;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome-section h1{
+    text-align: center;
+    font-size: 4rem;
+    font-style: italic;
+}
+
+#welcome-section p{
+    color: #E2DFD0aa;
+    font-size: 1.2rem;
+}
+
+#projects{
+    width: 100%;
+    padding: 6rem 2rem;
+
+    background-color: #F97300;
+}
+
+.projects-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-tile{
+    width: 480px;
+    height: 520px;
+    padding: 1rem 0;
+    border-radius: 1rem;
+
+    background-color: #524C42;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-tile a{
+    text-decoration: none;
+    color: #E2DFD0;
+    font-size: 1.2rem;
+}
+
+#contact{
+    width: 100%;
+    height: 18rem;
+
+    background-color: #524C42;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#contact h2{
+    font-size: 2rem;
+}
+
+#contact ul{
+    list-style: none;
+
+    display: flex;
+    gap: 2rem;
+}
+
+#contact a{
+    text-decoration: none;
+    color: #E2DFD0aa;
+}
+
+@media (max-width: 530px) {
+    #projects{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
